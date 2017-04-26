@@ -1,3 +1,6 @@
 test:
   override:
-    - phpunit sampleTest
+    - pwd ~
+    - ifconfig
+    - echo HelloWorld
+    - exit 0
