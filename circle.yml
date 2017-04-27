@@ -1,13 +1,13 @@
 machine:
   python:
-    version: 3.5.0
+    version: 3.5.2
 
 dependencies:
   pre:
-    - chmod -R 777 ./example
+    - chmod -R 777 .
     - pip install -r ./requirements.txt
-    - export PYTHONPATH="/home/ubuntu/flask_template/example/application"
-    - python ./application/manage.py runserver:
+    - export PYTHONPATH="/home/ubuntu/CItest"
+    - python ./sample.py runserver:
           background: true
     - sleep 5
 
@@ -16,6 +16,6 @@ test:
     - pwd ~
     - ifconfig
     - echo HelloWorld
-    - curl http://127.0.0.1/example
-    - py.test ./example/tests/test_example.py
+    - curl http://127.0.0.1:5000
+    - py.test ./test_example.py
     - exit 0

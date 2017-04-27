@@ -5,7 +5,7 @@ import requests
 
 def test_example():
     host = "127.0.0.1:5000"
-    url = 'http://{}/example/'.format(host)
+    url = 'http://{}'.format(host)
     print(url)
     response = requests.get(url)
     print(response.text)
