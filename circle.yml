@@ -11,7 +11,7 @@ dependencies:
 test:
   pre:
     - python ./sample.py:
-          background: true
+          background: false
     - sleep 5
   override:
     - pwd ~
