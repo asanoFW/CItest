@@ -4,10 +4,10 @@ machine:
 
 dependencies:
   pre:
-    - chmod -R 777 ./
+    - chmod -R 777 ./sample.py
     - pip install -r ./requirements.txt
     - export PYTHONPATH="/home/ubuntu/CItest"
-    - python ./sample.py runserver:
+    - python ./sample.py:
           background: true
     - sleep 5
 
