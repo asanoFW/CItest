@@ -1,17 +1,16 @@
 machine:
   python:
-    version: 2.7.10
+    version: 3.5.2
 
 dependencies:
   pre:
     - chmod -R 777 .
-    - pip install -r ./requirements.txt
     - export PYTHONPATH="/home/ubuntu/CItest"
 
 test:
   pre:
     - python ./sample.py:
-          background: false
+          background: true
     - sleep 5
   override:
     - pwd ~
