@@ -6,8 +6,7 @@ dependencies:
   pre:
     - chmod -R 777 .
     - pip install -r ./requirements.txt
-    - export PYTHONPATH="/home/ubuntu/CItest"
-    - python ./sample.py runserver:
+    - ./sample.py:
           background: true
     - sleep 5
 

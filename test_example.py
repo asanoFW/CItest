@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-form __future__ import absolute_import, unicode_literals
 import requests
-
 
 def test_example():
     host = "127.0.0.1:5000"
@@ -11,3 +9,5 @@ def test_example():
     print(response.text)
     assert response.status_code == 200
     assert "Error" not in response.text
+
+test_example()
