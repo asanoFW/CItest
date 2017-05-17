@@ -7,7 +7,7 @@ dependencies:
     - chmod -R 777 .
     - export PYTHONPATH="/home/ubuntu/CItest"
 
-test:
+deployment:
   override:
     - ssh futurewoods@218.251.229.13 sh CItest/test.sh
     - exit 0
