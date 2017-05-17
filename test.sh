@@ -1,4 +1,6 @@
 #!/bin/sh
-cd CItest
+set -ex
+
+sudo cd CItest
 sudo git pull
 
