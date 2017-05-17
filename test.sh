@@ -1,6 +1,6 @@
 #!/bin/sh
 set -ex
 
-sudo cd CItest
+cd CItest
 sudo git pull
 
