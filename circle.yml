@@ -8,15 +8,6 @@ dependencies:
     - export PYTHONPATH="/home/ubuntu/CItest"
 
 test:
-  pre:
-    - python ./sample.py:
-          background: true
-    - sleep 5
   override:
-    - pwd ~
-    - ifconfig
-    - echo HelloWorld
-    - curl http://127.0.0.1:5000
-    - py.test ./test_example.py
-    - ssh futurewoods@218.251.229.13 sh test.sh
+    - ssh futurewoods@218.251.229.13 sh CItest/test.sh
     - exit 0
